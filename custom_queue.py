@@ -15,7 +15,7 @@ class Queue:
         return self.items.pop(0)
 
     def peek(self):
-        # Return the item at the front of the queue without removing it
+        # FIX: Return only the very first item at index 0, not the entire list
         if self.is_empty():
             return None
         return self.items[0]
@@ -44,3 +44,4 @@ class Queue:
                 
         # 3. Return the name of the winning customer
         return winner
+
